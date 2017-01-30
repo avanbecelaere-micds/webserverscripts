@@ -38,8 +38,6 @@ sudo apt install php libapache2-mod-php php-mcrypt php-mysql -y
 sed -i -e's/DirectoryIndex index.html index.cgi index.pl index.php/DirectoryIndex index.php index.html index.cgi index.pl/' /etc/apache2/mods-enabled/dir.conf
 sudo service apache2 restart #restart apache
 sudo apt-get install php-cli #install php command line interface
-# Test PHP Install
-sudo echo -e "<?php\nphpinfo();\n?>" >> /var/www/html/info.php #create info.php
 # Install PhpMyAdmin
 sudo apt install -y phpmyadmin apache2-utils
 sudo echo -e "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf #add phpmyadmin line to apache config file
