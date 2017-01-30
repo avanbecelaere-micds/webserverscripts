@@ -24,7 +24,7 @@ sudo echo -e "ServerName" $myip >> /etc/apache2/apache2.conf #append ServerName 
 sudo systemctl restart apache2  #restart apache
 sudo mv /var/www/html/index.html /var/www/html/index.old #rename index.html
 # Create new index.php file to replace index.html
-sudo echo -e "<h1>hdm2.micds.org is under construction</h1>\n<h3>please check back later</h3>" >> /var/www/html/index.php
+sudo echo -e "<center><h1>this website is under construction</h1>\n<h3>please check back later</h3></center>" >> /var/www/html/index.php
 # Install MySQL Server
 sudo apt install -y mysql-server
 # Configure MySQL Server
