@@ -47,4 +47,3 @@ sed -i -e's/DirectoryIndex index.php/DirectoryIndex index.php\n    AllowOverride
 sudo echo -e "AuthType Basic\nAuthName \"Restricted Files\"\nAuthUserFile /etc/apache2/.phpmyadmin.htpasswd\nRequire valid-user" >> /usr/share/phpmyadmin/.htaccess #create .htaccess file
 sudo htpasswd -c /etc/apache2/.phpmyadmin.htpasswd micdsadmin #set password for admin access
 sudo service apache2 restart #restart apache
-#test3
